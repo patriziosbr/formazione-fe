@@ -9,16 +9,21 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatIconModule} from '@angular/material/icon';
+//date
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatInputModule} from '@angular/material/input';
-
+//modal
+import { MyModalComponent } from './my-modal/my-modal.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     ButtonsComponent,
-    MyDatePickerComponent
+    MyDatePickerComponent,
+    MyModalComponent
   ],
   imports: [
     CommonModule,
@@ -30,6 +35,8 @@ import {MatInputModule} from '@angular/material/input';
     MatDatepickerModule,
     MatNativeDateModule,
     MatInputModule,
+    MatDialogModule,
+    FormsModule,
     MaterialItemRoutingModule
   ]
 })
