@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyToolBarComponent } from './my-tool-bar/my-tool-bar.component';
 import { MaterialItemModule } from './material-item/material-item.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -20,6 +21,7 @@ import {MatButtonModule} from '@angular/material/button';
     MatToolbarModule,
     MatButtonModule,
     MaterialItemModule,
+    BrowserAnimationsModule,
     AppRoutingModule
   ],
   providers: [],
