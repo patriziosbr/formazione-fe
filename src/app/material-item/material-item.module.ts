@@ -19,25 +19,31 @@ import { MyModalComponent } from './my-modal/my-modal.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {FormsModule} from '@angular/forms';
 
+import {MatToolbarModule} from '@angular/material/toolbar';
+
+const modules = [
+  CommonModule,
+  MatRadioModule,
+  MatButtonModule,
+  MatDividerModule,
+  MatIconModule,
+  MatFormFieldModule,
+  MatDatepickerModule,
+  MatNativeDateModule,
+  MatInputModule,
+  MatDialogModule,
+  FormsModule,
+  MatToolbarModule,
+  MaterialItemRoutingModule
+]
+
 @NgModule({
   declarations: [
     ButtonsComponent,
     MyDatePickerComponent,
     MyModalComponent
   ],
-  imports: [
-    CommonModule,
-    MatRadioModule,
-    MatButtonModule,
-    MatDividerModule,
-    MatIconModule,
-    MatFormFieldModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatInputModule,
-    MatDialogModule,
-    FormsModule,
-    MaterialItemRoutingModule
-  ]
+  imports: [...modules],
+  exports: [...modules]
 })
 export class MaterialItemModule { }

@@ -12,23 +12,24 @@ import {MatButtonModule} from '@angular/material/button';
 
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
-
+const modules = [
+  BrowserModule,
+  MatToolbarModule,
+  MatButtonModule,
+  MaterialItemModule,
+  BrowserAnimationsModule,
+  MatDialogModule,
+  MatFormFieldModule,
+  AppRoutingModule
+]
 
 @NgModule({
   declarations: [
     AppComponent,
     MyToolBarComponent
   ],
-  imports: [
-    BrowserModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MaterialItemModule,
-    BrowserAnimationsModule,
-    MatDialogModule,
-    MatFormFieldModule,
-    AppRoutingModule
-  ],
+  imports: [...modules],
+  exports: [...modules],
   providers: [],
   bootstrap: [AppComponent]
 })
