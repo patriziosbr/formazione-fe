@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <h1 style="margin:0"><a mat-button [routerLink]="'/home'" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">SimpleRouter</a></h1>
+      <span class="menu-spacer"></span>
+      <div>
+        <a mat-button [routerLink]="'/buttons'" routerLinkActive="active">Button Mat</a>
+        <a mat-button [routerLink]="'/date'" routerLinkActive="active">Date picker</a>
+        <a mat-button [routerLink]="'/modal'" routerLinkActive="active">Contacts</a>
+      </div>
+    </mat-toolbar-row>
+</mat-toolbar>
