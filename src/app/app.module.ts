@@ -12,6 +12,7 @@ import {MatButtonModule} from '@angular/material/button';
 
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { MyHomeComponent } from './my-home/my-home.component';
 const modules = [
   BrowserModule,
   MatToolbarModule,
@@ -26,7 +27,8 @@ const modules = [
 @NgModule({
   declarations: [
     AppComponent,
-    MyToolBarComponent
+    MyToolBarComponent,
+    MyHomeComponent
   ],
   imports: [...modules],
   exports: [...modules],
